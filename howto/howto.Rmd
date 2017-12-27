@@ -1,0 +1,25 @@
+---
+title: "Coral Habitat Areas of Particular Concern (HAPC)"
+author: "John Froeschke"
+date: "Tuesday, September 22, 2015"
+output: html_document
+---
+
+## How to use this mapper
+
+
+## About this tool
+This is a simple tool to explore current and proposed Habitat Areas of Particular Concern (HAPC) in the Gulf of Mexico.  The <a href="http://gulfcouncil.org/about/fishery_council_members.php">Gulf of Mexico Fishery Management Council</a> is considering changes to current HAPC designations to take advantage of recent research that has identified additional regions supporting deepwater coral formations.  Consideration of new areas has been the subject of on-going discussion for the Council working with their <a href="http://gulfcouncil.org/panels_committees/advisory_panels.php#Coral">Coral Advisory Panel</a> and <a href="http://gulfcouncil.org/panels_committees/scientific_statistical_committees.php">Special Coral Scientific and Statitical Committee</a>. This habitat supports many important fish and invertebrate species and is among the most biologically diverse habitats in the Gulf of Mexico. 
+
+<p>The purpose of this tool is to permit viewing of current and proposed areas in this region using the interactive mapping (Map) tab.  For reference, an aggregated database of know locations supporting deep or shallow water corals is also visible. In total, there are four queryable layers that can be turned on or off using the checkbox in the bottom left corner. The various types of corals recorded at each location are noted in the coral locations legend.  The various HAPC types are discernable by color, and identified in the legend in the bottom right of the viewer.  Geographic coordinates can identified by clicking on the map (Results displayed below map). </p>
+
+<p> Questions or comments about this page? <a href="mailto: portal@gulfcouncil.org"> Contact us</a>
+</p>
+
+<!--<center><img src="logo.jpg" alt="Drawing" style="width: 100px ;"/></center> -->
+<!--<center><img src="CRCP_WebsiteLogo.png" alt="Drawing" style="width: 576px ;"/></center>-->
+
+<a href="http://www.gulfcouncil.org"><img src="logo.jpg" style="float: left; width: 20%; margin-left: 10%; margin-bottom: 0.5em;"></a>
+<a href="http://coralreef.noaa.gov/"><img src="CRCP_WebsiteLogo.png" style="float: right; width: 50%; margin-right: 10%; margin-bottom: 0.5em;"></a>
+<p style="clear: both;">
+

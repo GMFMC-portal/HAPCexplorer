@@ -1,0 +1,8 @@
+name: coralhapc
+account: gulfcouncilportal
+server: shinyapps.io
+bundleId: 273122
+url: https://gulfcouncilportal.shinyapps.io/coralhapc
+when: 1443118956.8712
+asMultiple: FALSE
+asStatic: FALSE

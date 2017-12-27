@@ -1,0 +1,37 @@
+---
+title: "Coral Habitat Areas of Particular Concern (HAPC)"
+
+output: html_document
+
+
+---
+
+<hr style="color: #ac9e91; height: 1px;">
+  
+<center><h4>Overview or recommended Gulf of Mexico Habitat Areas of Particular Concern</h4></center>
+<center><img src="Overview of GOM HAPCs.jpg"  style="width:550px;height:425px;"></center>
+
+<br>
+  
+<center><h4>Pulley Ridge</h4></center>
+<center><img src="Pulley Ridge for Scoping.jpg"  style="width:550px;height:425px;"></center>
+
+<br>
+  
+<center><h4>Florida</h4></center>
+<center><img src="North FL for scoping guide.jpg"  style="width:550px;height:425px;"></center>
+
+<br>
+  
+<center><h4>Northeastern Gulf of Mexico</h4></center>
+<center><img src="northeastern GOM.jpg"  style="width:550px;height:425px;"></center>
+
+<br>
+  
+<center><h4>Northern Gulf of Mexico</h4></center>
+<center><img src="north GOM for scoping.jpg"  style="width:550px;height:425px;"></center>
+
+<br>
+  
+<center><h4>South Texas</h4></center>
+<center><img src="South texas for scoping.jpg"  style="width:550px;height:425px;"></center>

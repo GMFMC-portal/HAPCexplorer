@@ -1,0 +1,177 @@
+input[type="number"] {
+  max-width: 80%;
+}
+
+div.outer {
+  position: fixed;
+  top: 41px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 5;
+}
+
+/* Customize fonts */
+body, label, input, button, select { 
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+ /* color: #004890;	*/
+}
+h1, h2, h3, h4 { font-weight: 400; } 
+
+#controls {
+  /* Appearance */
+  /* #a8c0d8;  light blue*/
+  background-color: #C8D7E6;
+  padding: 20px 20px 20px 20px;
+  cursor: move;
+}  
+
+
+/* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+  transition: opacity 500ms 1s;
+}*/
+
+/* 
+#controls:hover {
+  /* Fade in while hovering */
+  opacity: 0.95;
+  transition-delay: 0;
+} */
+
+/* Position and style citation */
+#cite {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+}
+
+/* If not using map tiles, show a white background */
+.leaflet-container {
+  background-color: white !important;
+}
+
+/* change color of leaflet legends*/
+
+.info{
+background-color: #FFFFFF;
+padding: 10px;
+
+}
+
+/* move text in mouse control print out */
+.lnlt {
+text-align: center;
+}
+
+/* change positioning of zoom button */
+.leaflet-top .leaflet-control {
+    margin-top: 50px;
+}
+
+
+/* generates different color on active tab */
+.skin-black .sidebar-menu>li.active>a, .skin-black .sidebar-menu>li:hover>a {
+color: #FFFFFF;
+background-color: #638CB5;
+}
+
+.legend{
+line-height: 25px;
+}
+
+/* adds rounded edges to images*/
+img {
+border-radius: 25px 25px 0px 0px;
+padding: 0px 0px 15px 0px
+}
+
+
+/* side bar background color */
+.skin-black .left-side, .skin-black .main-sidebar, .skin-black .wrapper {
+    /*background-color: #15909f; */
+	background-color: #12355f;
+}
+.skin-black .main-sidebar {
+	
+	font-weight: 600;
+	color: #FFFFFF;
+	font-family: 'Helvetica Neue', Helvetica;
+}
+
+.box-body {
+color: #141823;
+font-size:small;
+}
+
+h2 {   
+	color: #141823;
+}
+
+.main-sidebar .user-panel, .sidebar-menu, .sidebar-menu>li.header {
+white-space: normal!important;
+}
+
+
+/* update parameters of coral picture in modal box */
+
+#pic.modal-body{
+	padding: 15px 15px 15px 15px;
+	border-radius: 0px;
+}
+
+/* change coral image specifics */
+
+img#coral {
+	border-radius: 0px;
+}
+
+/* format entire model box */
+
+.modal-content {
+  border-radius: 25px;
+  background: #ECECEA;
+}
+
+.box-body {
+    border-radius: 0 0 0px 0px;
+    /* padding: 10px; */
+    background: #ECECEA;
+}
+
+.main-sidebar {
+	padding-top: 20px;
+}
+
+.content {
+	padding: 0px;
+}
+
+@media (min-width: 768px){.modal-dialog {
+    width: 36em;
+    margin: 30px auto;
+}}
+
+.modal-body {
+  position: relative;
+  line-height: 24px;
+  font-size: 18px;
+  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+  max-width: 34em;
+  padding: 0 2em;
+}
+
+
+@media screen and (max-width: 25em) {
+  body { font-size: 90%;}
+}
+
+h1, h2{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+color: #27272E;
+}
+

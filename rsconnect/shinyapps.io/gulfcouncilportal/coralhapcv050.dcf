@@ -1,0 +1,10 @@
+name: coralhapcv050
+account: gulfcouncilportal
+server: shinyapps.io
+appId: 127181
+bundleId: 566260
+url: https://gulfcouncilportal.shinyapps.io/coralhapcv050/
+when: 1474637339.01007
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: prep.R
