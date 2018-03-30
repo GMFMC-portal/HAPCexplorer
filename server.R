@@ -8,7 +8,7 @@ server <- function(input, output, session) {
 
   
   output$map <- renderLeaflet({  
-    leaflet() %>%
+    map <- leaflet() %>%
       addTiles('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
                options = providerTileOptions(noWrap = TRUE), group="World Imagery") %>%
       addTiles('http://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/Mapserver/tile/{z}/{y}/{x}',
@@ -154,45 +154,47 @@ server <- function(input, output, session) {
                                   "<b>Common name: </b>", Name, sep = " ")) %>%
     
  #  
-  # addControl(  html='
-  #          <!--Example adding point, line and polygon to create a custom legend-->
-  #           <!--This needs to be HTML-->
-  # 
-  # 
-  #              <table><tr><td class="shape"><svg width="24" height="18">
-  #              <circle cx="5" cy="5" r="4" stroke="#888888" stroke-width="1.5" fill="#a6d854" /></svg></td><td class="value">Black Coral</td></tr></table>
-  #              <table><tr><td class="shape"><svg width="24" height="18">
-  #              <circle cx="5" cy="5" r="4" stroke="#888888" stroke-width="1.5" fill="#66c2a5" /></svg></td><td class="value">Octocoral</td></tr></table>
-  # 
-  #              <table><tr><td class="shape"><svg width="24" height="18">
-  #              <circle cx="5" cy="5" r="4" stroke="#888888" stroke-width="1.5" fill="#fc8d62" /></svg></td><td class="value">Sea Pen</td></tr></table>
-  # 
-  #              <table><tr><td class="shape"><svg width="24" height="18">
-  #              <circle cx="5" cy="5" r="4" stroke="#888888" stroke-width="1.5" fill="#8da0cb" /></svg></td><td class="value">Soft Coral</td></tr></table>
-  # 
-  #              <table><tr><td class="shape"><svg width="24" height="18">
-  #              <circle cx="5" cy="5" r="4" stroke="#888888" stroke-width="1.5" fill="#ffd92f" /></svg></td><td class="value">Sponge</td></tr></table>
-  # 
-  #              <table><tr><td class="shape"><svg width="24" height="18">
-  #              <circle cx="5" cy="5" r="4" stroke="#888888" stroke-width="1.5" fill="#e78ac3" /></svg></td><td class="value">Stony Coral</td></tr></table>
-  # 
-  #              <table><tr><td class="shape"><svg style="width:24px; height:18px;" xmlns="http://www.w3.org/2000/svg" version="1.1"><line class="ln" style="stroke: #888888; stroke-opacity: 0.8; stroke-width: 3;" x1="2.5" y1="9" x2="21.5" y2="9" /></svg></td><td class="value">50 m contour</td></tr></table>'
-  # 
-  # 
-  # 
-  #               ## End HTML
-  #           , position= c("bottomleft"), className = "info legend", data = getMapData(map)
-  # 
-  # 
-  #           ) %>%
+  addControl(  html='
+           <!--Example adding point, line and polygon to create a custom legend-->
+            <!--This needs to be HTML-->
+
+               <!-- Point Example 
+              <table><tr><td class="shape"><svg width="24" height="18">
+                <circle cx="5" cy="5" r="4" stroke="#888888" stroke-width="1.5" fill="#e78ac3" /></svg></td><td class="value">Stony Coral</td></tr></table>
+                -->
+
+                <table><tr><td class="shape"><svg style="width:24px; height:22px;" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <polygon class="plgn" style="fill: #1b9e77; stroke: #1b9e77; fill-opacity: 1; stroke-opacity: 1.0; stroke-width: 1;" points="1.5, 0.5 22.5, 11 22.5, 21.5 1.5, 21.5" />
+                </svg></td><td class="value">HAPCs with fishing restrictions</td></tr></table>
+
+                <table><tr><td class="shape"><svg style="width:24px; height:22px;" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <polygon class="plgn" style="fill: #d95f02; stroke: #d95f02; fill-opacity: 1; stroke-opacity: 1.0; stroke-width: 1;" points="1.5, 0.5 22.5, 11 22.5, 21.5 1.5, 21.5" />
+               </svg></td><td class="value">HAPCs without fishing restrictions</td></tr></table>
+
+                <table><tr><td class="shape"><svg style="width:24px; height:22px;" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <polygon class="plgn" style="fill: #7570b3; stroke: #7570b3; fill-opacity: 1; stroke-opacity: 1.0; stroke-width: 1;" points="1.5, 0.5 22.5, 11 22.5, 21.5 1.5, 21.5" />
+               </svg></td><td class="value">Recommended (Updated Sept. 2016)</td></tr></table>
+
+               <table><tr><td class="shape"><svg style="width:24px; height:18px;" xmlns="http://www.w3.org/2000/svg" version="1.1">
+               <line class="ln" style="stroke: #888888; stroke-opacity: 0.8; stroke-width: 3;" x1="2.5" y1="9" x2="21.5" y2="9" /></svg>
+               </td><td class="value">50 m contour</td></tr></table>'
+
+
+
+                ## End HTML
+            , position= c("bottomright"), className = "info legend"#, data = getMapData(map)
+
+
+            ) %>%
   
 ## Add a legend.
-  addLegend("bottomright", colors = c('#1b9e77',  '#d95f02', '#7570b3'),
-            labels = c("HAPCs with fishing restrictions",  "HAPCs without fishing restrictions","Recommended (Updated Sept. 2016)"),
-            title = "Legend (HAPCs)",
-            #labFormat = labelFormat(prefix = "$"),
-            opacity = 1
-  )  %>%
+  # addLegend("bottomright", colors = c('#1b9e77',  '#d95f02', '#7570b3','#888888'),
+  #           labels = c("HAPCs with fishing restrictions",  "HAPCs without fishing restrictions","Recommended (Updated Sept. 2016)",
+  #                      "50 m contour"),
+  #           title = "Legend (HAPCs)",
+  #           #labFormat = labelFormat(prefix = "$"),
+  #           opacity = 1
+  # )  %>%
 ###end legend
 # Layers control
 addLayersControl(

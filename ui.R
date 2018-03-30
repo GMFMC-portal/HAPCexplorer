@@ -34,8 +34,8 @@ ui <- dashboardPage(skin="black",
                    br(),
                    br(),
                    div(tags$a(href = "https://coralreef.noaa.gov/", target="_blank",img(src="landscape_white.png", style="max-width: 200px;"), style="text-align: center;")),
-                   div(tags$p(style="color: #b8c7ce;margin:0;","Version 1.1")),
-                   div(tags$p(style="color: #b8c7ce; margin:0;","Updated 6-Dec-2017"))
+                   div(tags$p(style="color: #b8c7ce;margin:0;","Version 1.2")),
+                   div(tags$p(style="color: #b8c7ce; margin:0;","Updated 30-Mar-2018"))
   ),
   
   
