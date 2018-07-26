@@ -1,5 +1,5 @@
 ##global R
-
+## version 1.2: Update to final areas from Amendment 9
 ## version 1.1 ## Updated 6Dec17. 
 ## version 1.0 ## Added modal page with JS to replace welcome page 
 ##version 0.53  ## changes package build and loading to work with mapview
